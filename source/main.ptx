@@ -1,11 +1,17 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<pretext xml:lang="en-US">
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <docinfo>
     <macros>
       \newcommand{\R}{\mathbb R}
     </macros>
+
+  <latex-image-preamble>
+    \usepackage{tikz, pgfplots}
+  </latex-image-preamble>
+
+    <rename element="inline exercise">Try it!</rename>
   </docinfo>
 
   <book xml:id="my-great-book">
@@ -73,18 +79,22 @@
         <example>
           <statement>
             <p>
-              Solve the inequality <m>x+2 \lt 7</m>.
+              Solve the inequality <m>x+2 \lt 12</m>.
             </p>
           </statement>
         </example>
+        <figure xml:id="fig-frog">
+          <caption>This is a line</caption>
+          <image width="50%">
+            <description>a line</description>
+<latex-image>
+  \begin{tikzpicture}
+    \draw[semithick, dashed] (0,0) -- (3,2);
+  \end{tikzpicture}
+</latex-image>
+          </image>
+        </figure>
       </section>
-    <example>
-      <statement>
-        <p>
-          Solve the inequality <m>x+2 \lt 7</m>.
-        </p>
-      </statement>
-    </example>
 
     </chapter>
 
