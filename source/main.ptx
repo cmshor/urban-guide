@@ -44,18 +44,57 @@
     </frontmatter>
 
     <chapter xml:id="chapter-">
-      <title></title>
+      <title>Chapter shmapter</title>
 
       <section xml:id="section-">
-        <title></title>
-        <p>Hello</p>
+        <title>A section</title>
+        <exercise>
+          <statement>
+            <p>
+              What is the derivative of <m>f(x)=\frac{x^2+1}{x}</m>?
+            </p>
+          </statement>
+          <hint>
+            <p>
+              Use the quotient rule.
+            </p>
+          </hint>
+          <answer>
+            <p>
+              <m>f'(x)=1-1/x^2</m>.
+            </p>
+          </answer>
+        </exercise>
       </section>
+
+      <section xml:id="sec-my-next-section">
+        <title>my-next-section</title>
+        
+        <example>
+          <statement>
+            <p>
+              Solve the inequality <m>x+2 \lt 7</m>.
+            </p>
+          </statement>
+        </example>
+      </section>
+    <example>
+      <statement>
+        <p>
+          Solve the inequality <m>x+2 \lt 7</m>.
+        </p>
+      </statement>
+    </example>
 
     </chapter>
 
     <backmatter xml:id="backmatter">
       <title>Backmatter</title>
 
+      <solutions inline="hint answer">
+        <title>Select hints and answers</title>
+      </solutions>
+        
       <colophon>
         <p> This book was authored in <pretext />. </p>
       </colophon>
